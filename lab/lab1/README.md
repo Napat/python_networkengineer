@@ -1,4 +1,4 @@
-# โปรแกรมการเชื่อต่อบนระบบเครือข่าย
+# โปรแกรมการเชื่อมต่อบนระบบเครือข่าย
 
 ``` cmd
 # python autocomplete module for python console
