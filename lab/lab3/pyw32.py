@@ -19,6 +19,3 @@ for device in routers:
        print("Can not connect to [%s]" %device)
        pass
 
-
-
-	
