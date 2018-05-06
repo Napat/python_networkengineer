@@ -53,3 +53,7 @@ ts = pd.date_range("11:00", "11:20", freq="5min")
 ## Lab1_5
 
 เป็นตัวอย่างการสร้าง animation chart โดยการเรียก function ที่ทำการอัปเดทรูปทุกๆคาบเวลาใดๆโดยอาศัย function จากโมดูล matplotlib ในการ plot รูปร่วมกับข้อมูล dataframe จากโมดูล pandas
+
+## Workshop1
+
+โปรแกรม ping plotter จะทำการ ping server แล้วนำเอาค่า min, max, average มา plot และแสดงผลเป็น animation โดยจะอัปเดทรูปทุกๆหนึ่งหน่วยเวลา
