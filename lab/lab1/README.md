@@ -49,3 +49,7 @@ arr.find("banana")   # -1
 ts = pd.date_range("11:00", "11:20", freq="5min")
 ```
 จากนั้นจึงสร้าง dataframe ของข้อมูลขึ้นมาและทดสอบฟังก์ชันต่างๆของโมดูล pandas 
+
+## Lab1_5
+
+เป็นตัวอย่างการสร้าง animation chart โดยการเรียก function ที่ทำการอัปเดทรูปทุกๆคาบเวลาใดๆโดยอาศัย function จากโมดูล matplotlib ในการ plot รูปร่วมกับข้อมูล dataframe จากโมดูล pandas

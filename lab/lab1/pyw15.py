@@ -7,7 +7,7 @@ import time
 fig = plt.figure("Network Connection Test")
 tformat = "%d/%m/%Y"
 timeStartDay = time.strftime(tformat)
-tformat = "%H:%M"
+tformat = "%H:%M:%S"
 
 numMin = []
 numMax = []
@@ -23,11 +23,19 @@ def animate(i):
    df = pd.DataFrame({'time': ts, 'min': numMin, 'max': numMax, 'avg': numAvg})
    fig.clear()
    plt.plot( 'time', 'avg', data=df, marker='o', markerfacecolor='blue', markersize=6, color='skyblue', linewidth=4)
-   plt.plot( 'time', 'min', data=df, marker='', color='green', linewidth=2)
+   plt.plot( 'time', 'min', data=df, marker='x', color='green', linewidth=2)
    plt.plot( 'time', 'max', data=df, marker='', color='red', linewidth=2)
    plt.legend()
    plt.ylabel('RTT (ms)')
    plt.xlabel(timeStartDay)	
+   
+   print("-----")
+   print("numMin: ", numMin)
+   print("numMax: ", numMax)
+   print("numAvg: ", numAvg)
+   print("ts: ", ts)
+   print("df: ", df)
 
-ani = animation.FuncAnimation(fig, animate, interval=60000)
+# Makes an animation by repeatedly calling a animate function
+ani = animation.FuncAnimation(fig, animate, interval=10000)
 plt.show()
