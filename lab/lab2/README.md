@@ -8,3 +8,16 @@
 
 sftp get()/put() file
 
+## Lab2_3
+
+การใช้งาน logging module จัดการ log level ซึ่งมีอยู่ 5 ระดับ
+1.DEBUG
+2.INFO
+3.WARNING
+4.ERROR
+5.CRITICAL
+สามารถตั้งค่า api python ให้ write log เฉพาะ level ที่สูงกว่าที่กำหนดได้ด้วย
+```
+logger.setLevel(logging.WARNING)
+```
+ก็จะ write เฉพาะ log file เฉพาะ log ที่มี level สูงกว่าหรือเท่ากับ WARNING ได้แก่ logger.warning(), logger.error() และ logger.critical()
