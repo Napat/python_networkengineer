@@ -17,7 +17,15 @@ sftp get()/put() file
 4.ERROR
 5.CRITICAL
 สามารถตั้งค่า api python ให้ write log เฉพาะ level ที่สูงกว่าที่กำหนดได้ด้วย
-```
+
+``` python
 logger.setLevel(logging.WARNING)
 ```
+
 ก็จะ write เฉพาะ log file เฉพาะ log ที่มี level สูงกว่าหรือเท่ากับ WARNING ได้แก่ logger.warning(), logger.error() และ logger.critical()
+
+## Workshop2
+
+โปรแกรม ssh เข้าสู่ server แล้วคอยสำรองฐานข้อมูลของระบบ (backup database) ในแต่ละวัน โดยตั้งชื่อไฟล์ในรูปแบบ YearMonthDate.sql และเก็บ log การทำงานของโปรแกรมเช่่น login สำเร็จหรือไม่ เป็นต้น
+
+

@@ -8,7 +8,7 @@ except paramiko.SSHException:
     print("Connection Failed")
     quit()
 
-"""
+""" # Dump database file
 print("-----")
 stdin, stdout, stderr = ssh.exec_command("mysqldump -uadmindb -padmindbpass testdb > backup_testdb.sql")
 for line in stdout.readlines():
