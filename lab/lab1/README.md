@@ -5,6 +5,8 @@
 py -m pip install ipython pyreadline
 ```
 
+Note: โปรแกรมนี้ทดสอบบน windows หากจะนำไปทดสอบบน Linux อาจจะต้องแก้เงื่อยไขการตัดคำต่างๆบ้าง เนื่องจาก output ของคำสั่งต่างๆเช่น ping มีความแตกต่างกันในแต่ละ OS เช่นตัวเลขค่าเฉลี่ยของคำสั่ง ping บน windows แสดงผลเป็นจำนวนเต็ม แต่บน Linux จำแสดงผลแบบมีทศนิยมอยู่ด้วย เป็นต้น
+
 ## Lab1_1
 
 ภาษา python สามารถใช้ module subprocess เพื่อเรียกใช้งาน command ต่างๆของระบบเช่น ping ได้
@@ -57,3 +59,5 @@ ts = pd.date_range("11:00", "11:20", freq="5min")
 ## Workshop1
 
 โปรแกรม ping plotter จะทำการ ping server แล้วนำเอาค่า min, max, average มา plot และแสดงผลเป็น animation โดยจะอัปเดทรูปทุกๆหนึ่งหน่วยเวลา
+
+![ping monitor](pinggraph.png "ping monitor")
